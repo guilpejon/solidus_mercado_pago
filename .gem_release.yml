@@ -1,0 +1,5 @@
+bump:
+  recurse: false
+  file: 'lib/solidus_mercado_pago/version.rb'
+  message: Bump SolidusMercadoPago to %{version}
+  tag: true
