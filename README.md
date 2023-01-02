@@ -40,6 +40,8 @@ mercado_pago:
 
 ### Create a new payment method
 
+![image](https://user-images.githubusercontent.com/871362/210281233-8af87be9-63bb-4435-bd2b-499a1931b029.png)
+
 1. Visit `/admin/payment_methods/new`
 2. Set `Mercado pago` as provider.
 3. Save to update the form

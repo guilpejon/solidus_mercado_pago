@@ -1,5 +1,4 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: Hello world
+  mercado_pago:
+    make_payment: "Pay with Mercado Pago"
+    authentication_error: "It was not possible to authenticate with Mercado Pago"
