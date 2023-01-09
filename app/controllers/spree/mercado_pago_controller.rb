@@ -24,7 +24,7 @@ module Spree
     # if required.
     def success
       payment = Spree::Payment.find_by(number: params[:external_reference])
-      payment.order.next!
+      payment.order.complete
       flash.notice = I18n.t(:order_processed_successfully, scope: :spree)
       flash['order_completed'] = true
       redirect_to main_app.order_path(payment.order)

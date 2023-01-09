@@ -47,14 +47,12 @@ module MercadoPago
 
       if STATES[:complete].include?(mercadopago_payment['status'])
         payment.complete
+        payment.order.complete
       elsif STATES[:failure].include?(mercadopago_payment['status'])
         payment.failure
       elsif STATES[:void].include?(mercadopago_payment['status'])
         payment.void
       end
-
-      # When Spree issue #5246 is fixed we can remove this line
-      # payment.order.updater.update
     end
   end
 end
